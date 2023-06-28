@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora para gasto de Gasolina</title>
+</head>
+<body>
+    <h1> Consumo de Gasolina</h1>
+
+    <label for="percurso">Percurso em quilômetros:</label>
+    <input type="number" id="percurso">
+  
+    <br><br>
+  
+    <label for="tipoCarro">Tipo de carro:</label>
+    <select id="tipoCarro">
+      <option value="8">Carro 1</option>
+      <option value="9">Carro 2</option>
+      <option value="12">Carro 3</option>
+    </select>
+  
+    <br><br>
+  
+    <label>
+      <input type="checkbox" id="arCondicionado"> Utilizar ar-condicionado
+    </label>
+  
+    <br><br>
+  
+    <button onclick="calcularConsumo()">Calcular</button>
+  
+    <br><br>
+  
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+    <form><button class="button2" type="submit"><strong><a href="../index.html">Voltar</a></strong></button></form>
+
+</body>
+</html>
