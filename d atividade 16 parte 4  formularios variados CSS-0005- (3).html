@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo Formulários 3</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Segundo Exemplo Formulário</h2>
+        <form>
+            <fieldset style="width: 345px; margin: 0 auto;">
+                <table style="margin: 0;">
+                    <tr>
+                        <td style="text-align: right;">Nome:</td>
+                        <td><input type="text" name="nome" placeholder="Seu nome..."></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">E-mail:</td>
+                        <td><input type="email" name="email" placeholder="Seu e-mail..."></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">Salário:</td>
+                        <td><input type="number" name="salario" step="0.05" min="0" max="100000" placeholder="Seu salário..."></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">Telefone:</td>
+                        <td><input type="tel" name="telefone" placeholder="Seu telefone..."></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">UF de Nascimento:</td>
+                        <td>
+                            <select name="uf">
+                                <option selected disabled>Selecione...</option>
+                                <option>São Paulo</option>
+                                <option>Minas Gerais</option>
+                                <option>Rondônia</option>
+                                <option>Acre</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">Hobby:</td>
+                        <td>
+                            <input type="radio" name="hobby" value="jogos">Jogos
+                            <input type="radio" name="hobby" value="esportes">Esportes
+                            <input type="radio" name="hobby" value="musica">Música
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Enviar">
+                            <input type="submit" value="Limpar">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    <form><button class="button2" type="submit"><strong><a href="../index.html">Voltar</a></strong></button></form>
+    </body>
+</html>
