@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algoritmo de Soma</title>
+  <script>
+    function calcularSoma() {
+      let numero1 = parseFloat(document.getElementById("numero1").value);
+      let numero2 = parseFloat(document.getElementById("numero2").value);
+
+      let soma = numero1 + numero2;
+
+      if (soma > 20) {
+        soma += 8;
+        document.getElementById("resultado").innerHTML = "O valor da soma é maior que 20. Resultado: " + soma;
+      } else {
+        soma -= 5;
+        document.getElementById("resultado").innerHTML = "O valor da soma é menor ou igual a 20. Resultado: " + soma;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Algoritmo de Soma Javascript</h1>
+  <label for="numero1">Digite o primeiro número:</label>
+  <input type="number" id="numero1" step="any"><br>
+  <label for="numero2">Digite o segundo número:</label>
+  <input type="number" id="numero2" step="any"><br>
+  <button onclick="calcularSoma()">Calcular</button>
+  <p id="resultado"></p>
+</body>
+</html>

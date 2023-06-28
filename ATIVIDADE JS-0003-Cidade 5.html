@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando número em Javascript</title>
+</head>
+    <body>
+        <h1>Verificação de Número</h1>
+        <label for="numero">Digite um número:</label>
+        <input type="number" id="numero">
+        <button onclick="verificarNumero()">Verificar</button>
+        <p id="resultado"></p>
+        <script>
+        function verificarNumero() {
+          let numero = parseFloat(document.getElementById("numero").value);
+          let quadrado = Math.pow(numero, 2);
+          let dobro = 2 * numero;
+    
+          if (isNaN(numero)) {
+            document.getElementById("resultado").innerHTML = "O valor digitado não é um número válido.";
+          } else if (numero < (quadrado / dobro)) {
+            document.getElementById("resultado").innerHTML = "SIM";
+          } else {
+            document.getElementById("resultado").innerHTML = "NÃO";
+          }
+        }
+      </script>
+    
+    <body>
+      
